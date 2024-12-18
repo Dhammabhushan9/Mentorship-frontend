@@ -11,7 +11,7 @@ const Profile = () => {
     setLoading(true);
     const token = localStorage.getItem('token');
     try {
-      const response = await axios.get(`https://mentorship-backend-chi.vercel.app//api/profiles/me`, {
+      const response = await axios.get(`https://mentorship-backend-chi.vercel.app/api/profiles/me`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProfile(response.data);

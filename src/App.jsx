@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Profile from './pages/Profile';
 import Matches from './pages/Matches';
+import Signup from './pages/Signup';
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
@@ -17,6 +18,7 @@ const App = () => {
       <Navbar />
       <Routes>
         {/* Public Route */}
+        <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
 
         {/* Protected Routes */}
