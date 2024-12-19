@@ -22,7 +22,7 @@ const Signup = () => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://mentorship-backend-eight.vercel.app/api/auth/register', formData);
+      const response = await axios.post('https://mentorship-backend-ten.vercel.app/api/auth/register', formData);
       if (response.status === 201) {
         navigate('/login'); // Redirect to login after successful signup
       }
