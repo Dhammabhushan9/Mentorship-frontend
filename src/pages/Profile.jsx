@@ -8,7 +8,7 @@ const Profile = () => {
   const [success, setSuccess] = useState('');
   const [isNewProfile, setIsNewProfile] = useState(false);
 
-  const API_URL = "https://mentorship-backend-eight.vercel.app";
+  const API_URL = "https://mentorship-backend-ten.vercel.app/";
 
   // Fetch the user's profile
   const fetchProfile = async () => {
@@ -45,7 +45,7 @@ const Profile = () => {
     setLoading(true);
     const token = localStorage.getItem('token');
     try {
-      await axios.post(`https://mentorship-backend-eight.vercel.app/api/profiles`, profile, {
+      await axios.post(`https://mentorship-backend-ten.vercel.app/api/profiles`, profile, {
         headers: { Authorization: `Bearer ${token}` },
       });
       alert('Profile created successfully!');
