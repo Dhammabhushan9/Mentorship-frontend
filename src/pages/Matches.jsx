@@ -7,7 +7,7 @@ const Matches = () => {
   const fetchMatches = async () => {
     const token = localStorage.getItem('token');
     try {
-      const response = await axios.get("https://mentorship-backend-chi.vercel.app/api/matches", {
+      const response = await axios.get("https://mentorship-backend-eight.vercel.app/api/matches", {
         headers: { Authorization: `Bearer ${token}` },
       });
       setMatches(response.data);

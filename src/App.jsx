@@ -25,17 +25,17 @@ const App = () => {
         <Route
           path="/profile"
           element={
-          //  <ProtectedRoute>
+           <ProtectedRoute>
               <Profile />
-          //  </ProtectedRoute>
+         </ProtectedRoute>
           }
         />
         <Route
           path="/matches"
           element={
-        //    <ProtectedRoute>
+           <ProtectedRoute>
               <Matches />
-          //  </ProtectedRoute>
+          </ProtectedRoute>
           }
         />
 
